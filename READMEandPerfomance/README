@@ -1,0 +1,7 @@
+#This DNS resolver written in C
+
+build with: make DNS
+clean with: make clean
+
+usage: ./multi-lookup <#ofRequesterThreads> <#ofResolverThreads> <path/to/results> <path/to/thread/activity> <path/to/domainNames>
+

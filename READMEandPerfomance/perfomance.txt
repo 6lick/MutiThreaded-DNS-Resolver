@@ -1,0 +1,29 @@
+Number for requester thread = 1 
+Number for resolver thread = 1
+Total run time: 3.36
+
+Number for requester thread = 1 
+Number for resolver thread = 3
+Total run time: 3.15
+
+Number for requester thread = 3 
+Number for resolver thread = 1
+Total run time: 3.36
+
+Number for requester thread = 3 
+Number for resolver thread = 3
+Total run time: 4.12
+
+Number for requester thread = 5 
+Number for resolver thread = 5
+Total run time: 3.74
+
+Number for requester thread = 8 
+Number for resolver thread = 5
+Total run time: 4.34
+
+
+The quickest run time occured with one requester and three resolvers. This is not what I expected, I expected 5 requester threads 
+and the smallest amount of resolver threads to be the fastest. This was my assumption because with five requester threads each could service 
+a file, once you exceed five the additional threads are just wasting cpu cycles. For the resolver threads I assumed the fewer the better since 
+only one can be in the shared buffer at a time.  
